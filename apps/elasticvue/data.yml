@@ -1,0 +1,20 @@
+name: elasticvue Elasticsearch WebUI
+tags:
+    - 开发工具
+title: elasticvue Elasticsearch Web管理
+type: 开发工具
+description: elasticvue Elasticsearch Web管理
+additionalProperties:
+    key: elasticvue
+    name: elasticvue Elasticsearch WebUI
+    tags:
+        - DevTool
+    shortDescZh: elasticvue Elasticsearch Web管理
+    shortDescEn: elasticvue Elasticsearch WebUI
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 5
+    website: https://elasticvue.com/
+    github: https://github.com/cars10/elasticvue
+    document: https://github.com/cars10/elasticvue

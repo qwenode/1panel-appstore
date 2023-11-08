@@ -15,6 +15,13 @@ additionalProperties:
           labelZh: 挂载文件夹路径
           required: true
           type: text
+        - default: ./backup
+          edit: true
+          envKey: BACKUP_PATH
+          labelEn: Backup and Snapshot Directory
+          labelZh: 备份与快照文件夹
+          required: true
+          type: text
         - default: "true"
           edit: true
           envKey: ELASTIC_SECURITY

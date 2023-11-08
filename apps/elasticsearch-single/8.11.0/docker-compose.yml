@@ -8,8 +8,9 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:9200"
     volumes:
-      - "${MOUNT_PATH}:/usr/share/elasticsearch/"
-    user: "1000:1000"
+      - "${MOUNT_PATH}:/usr/share/elasticsearch/data"
+      - "${BACKUP_PATH}:/usr/share/elasticsearch/backup"
+      - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
     image: elasticsearch:8.11.0
     ulimits:
       memlock:
@@ -22,6 +23,10 @@ services:
       - discovery.type=single-node
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - xpack.security.enabled=${ELASTIC_SECURITY}
+      - http.cors.enabled=${ELASTIC_SECURITY}
+      - http.cors.allow-origin="*"
+      - http.cors.allow-headers="X-Requested-With,Content-Type,Content-Length,Authorization"
+      - "ES_JAVA_OPTS=-Xlog:disable -Xlog:gc=debug:stderr"
     labels:
       createdBy: "Apps"
 
