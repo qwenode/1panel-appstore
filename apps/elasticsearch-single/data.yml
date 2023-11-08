@@ -1,0 +1,20 @@
+name: Elasticsearch Single
+tags:
+    - 数据库
+title: Elasticsearch 单节点版
+type: 数据库
+description: Elasticsearch 单节点版
+additionalProperties:
+    key: elasticsearch-single
+    name: Elasticsearch Single
+    tags:
+        - Database
+    shortDescZh: Elasticsearch 单节点版
+    shortDescEn: Elasticsearch Single
+    type: database
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 5
+    website: https://www.elastic.co
+    github: https://github.com/elastic/elasticsearch
+    document: https://www.elastic.co/guide/en/elasticsearch/reference/8.11/elasticsearch-intro.html

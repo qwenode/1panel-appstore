@@ -1,0 +1,38 @@
+additionalProperties:
+    formFields:
+        - default: 9200
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: HTTP Port
+          labelZh: HTTP端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: ./data
+          edit: true
+          envKey: MOUNT_PATH
+          labelEn: Mount folder path
+          labelZh: 挂载文件夹路径
+          required: true
+          type: text
+        - default: "true"
+          edit: true
+          envKey: ELASTIC_SECURITY
+          labelEn: Password Verification
+          labelZh: 开启密码验证
+          required: true
+          type: select
+          values:
+            - label: "True"
+              value: "true"
+            - label: "False"
+              value: "false"
+        - default: ""
+          edit: true
+          envKey: ELASTIC_PASSWORD
+          labelEn: Password
+          labelZh: 密码
+          random: true
+          required: true
+          rule: paramCommon
+          type: text

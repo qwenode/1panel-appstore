@@ -1,0 +1,30 @@
+version: '3'
+services:
+  elasticsearch-single:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9200"
+    volumes:
+      - "${MOUNT_PATH}:/usr/share/elasticsearch/data"
+    user: "${UID}:${GID}"
+    image: elasticsearch:8.11.0
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    environment:
+      - discovery.type=single-node
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - xpack.security.enabled=${ELASTIC_SECURITY}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
