@@ -12,7 +12,7 @@ services:
       - "${BACKUP_PATH}:/usr/share/elasticsearch/backup"
       - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
     image: elasticsearch:8.11.0
-    user: "0:0"
+    user: 0:0
     ulimits:
       memlock:
         soft: -1
