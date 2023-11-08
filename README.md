@@ -1,5 +1,5 @@
-# 使用方式
-将local_appstore_sync_helper.sh 放到 1panel 计划任务中,定时执行即可自动同步本仓库应用,默认无需修改脚本任何参数
+# 安装/使用方式
+将 local_appstore_sync_helper.sh 放到 1panel 计划任务中,定时执行即可自动同步本仓库应用,默认无需修改脚本任何参数
 
 # local-appstore-for-1Panel
 
