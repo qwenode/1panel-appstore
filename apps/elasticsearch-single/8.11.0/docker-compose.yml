@@ -12,7 +12,7 @@ services:
       - "${BACKUP_PATH}:/usr/share/elasticsearch/backup"
       - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
     image: elasticsearch:8.11.0
-    user: 0:0
+#    user: 0:0
     ulimits:
       memlock:
         soft: -1
@@ -27,7 +27,7 @@ services:
       - http.cors.enabled=${ELASTIC_SECURITY}
       - http.cors.allow-origin="*"
       - http.cors.allow-headers="X-Requested-With,Content-Type,Content-Length,Authorization"
-      - "ES_JAVA_OPTS=-Xlog:disable -Xlog:gc=debug:stderr"
+      - ${P_ES_JAVA_OPTS}
     labels:
       createdBy: "Apps"
 
