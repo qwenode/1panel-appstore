@@ -1,6 +1,6 @@
 # local-appstore-for-1Panel
 
-> [1Panel本地应用商店 / local appstore for 1Panel](https://github.com/xxxily/local-appstore-for-1Panel/blob/main/local_appstore_sync_helper.sh)
+https://github.com/qwenode/1panel-appstore
 
 ## 特性
 
@@ -125,6 +125,7 @@ work_dir="/opt/1panel_hepler"
 | 应用源地址 | 说明 |
 | --- | --- |
 | [https://github.com/1Panel-dev/appstore](https://github.com/1Panel-dev/appstore) | 1Panel官方应用商店 |
+| https://github.com/qwenode/1panel-appstore | 基于1Panel的又一个第三方应用商店 |
 | [https://github.com/okxlin/appstore](https://github.com/okxlin/appstore) | 基于1Panel的第三方应用商店 |
 | [https://github.com/xxxily/local-appstore-for-1Panel](https://github.com/xxxily/local-appstore-for-1Panel) | 暂无应用（待集成） |
 
