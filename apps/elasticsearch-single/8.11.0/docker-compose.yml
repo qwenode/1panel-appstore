@@ -8,8 +8,8 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:9200"
     volumes:
-      - "${MOUNT_PATH}:/usr/share/elasticsearch/data"
-    user: "${UID}:${GID}"
+      - "${MOUNT_PATH}:/usr/share/elasticsearch/"
+    user: "1000:1000"
     image: elasticsearch:8.11.0
     ulimits:
       memlock:
