@@ -27,7 +27,7 @@ additionalProperties:
               value: "true"
             - label: "False"
               value: "false"
-        - default: ""
+        - default: "ElLongPwA"
           edit: true
           envKey: ELASTIC_PASSWORD
           labelEn: Password
