@@ -34,5 +34,5 @@ additionalProperties:
           labelZh: 密码
           random: true
           required: true
-          rule: paramCommon
-          type: text
+          rule: paramComplexity
+          type: password
