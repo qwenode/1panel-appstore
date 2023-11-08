@@ -1,11 +1,12 @@
 #!/bin/bash
+# 直接执行或复制此脚本到 1Panel->计划任务中定时执行即可
 
 # 1panel本地app的目录（如果不是默认安装，需修改该目录）
 app_local_dir="/opt/1panel/resource/apps/local"
 
 # AppStore的git仓库地址（必选）
 # git_repo_url="https://github.com/xxxily/local-appstore-for-1Panel"
-git_repo_url="https://github.com/1Panel-dev/appstore"
+git_repo_url="https://github.com/qwenode/1panel-appstore"
 
 # 访问git仓库的access token，访问私有仓库时用，优先级高于账密（可选）
 # 建议使用access token，降低账密泄露的风险
