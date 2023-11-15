@@ -1,0 +1,20 @@
+name: Dremio Single
+tags:
+    - 开发工具
+title: Dremio 单节点版
+type: 开发工具
+description: Dremio 单节点版
+additionalProperties:
+    key: dremio-single
+    name: Dremio Single
+    tags:
+        - DevTool
+    shortDescZh: Dremio 单节点版
+    shortDescEn: Dremio Single
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 5
+    website: https://www.dremio.com
+    github: https://hub.docker.com/r/dremio/dremio-oss
+    document: https://docs.dremio.com/current/

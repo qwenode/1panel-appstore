@@ -1,0 +1,17 @@
+version: '3'
+services:
+  dremio-single:
+    container_name: "dremio"
+    restart: always
+#    networks:
+#      - 1panel-network
+#    network_mode: host
+    ports:
+      - "9047:9047"
+    image: dremio/dremio-oss:24.2.5
+    labels:
+      createdBy: "Apps"
+
+#networks:
+#  1panel-network:
+#    external: true
