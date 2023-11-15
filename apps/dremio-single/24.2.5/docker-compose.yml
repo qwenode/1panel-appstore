@@ -12,6 +12,8 @@ services:
       - "${MOUNT_PATH}:/opt/dremio/data"
       - "${CACHE_PATH}:/var/lib/dremio"
       - "${CACHE_PATH}:/var/log/dremio"
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
     environment:
       - TZ=${TZ}
     labels:
