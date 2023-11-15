@@ -1,5 +1,6 @@
 #!/bin/bash
 
+chown 999:999 ./dremio
 source ./.env
 if [ -z "${MOUNT_PATH}" ] || [ -z "${CACHE_PATH}" ]; then
     echo "Error: MOUNT_PATH or CACHE_PATH is empty. Exiting script."
