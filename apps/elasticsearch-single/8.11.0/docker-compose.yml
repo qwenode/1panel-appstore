@@ -23,9 +23,6 @@ services:
       - discovery.type=single-node
       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
       - xpack.security.enabled=${ELASTIC_SECURITY}
-      - http.cors.enabled=${ELASTIC_SECURITY}
-      - http.cors.allow-origin="*"
-      - http.cors.allow-headers="X-Requested-With,Content-Type,Content-Length,Authorization"
       - ${P_ES_JAVA_OPTS}
     labels:
       createdBy: "Apps"
