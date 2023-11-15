@@ -22,3 +22,10 @@ additionalProperties:
           labelZh: 缓存文件夹
           required: true
           type: text
+        - default: "Asia/Shanghai"
+          edit: true
+          envKey: TZ
+          labelEn: Timezone
+          labelZh: 时区
+          required: true
+          type: text
