@@ -1,6 +1,8 @@
 #!/bin/bash
 
-mkdir data
-mkdir backup
-chown -R 1000:1000 data
-chown -R 1000:1000 backup
+source ./.env
+
+mkdir -p ${MOUNT_PATH}
+mkdir -p ${BACKUP_PATH}
+chown -R 1000:1000 ${MOUNT_PATH}
+chown -R 1000:1000 ${BACKUP_PATH}
