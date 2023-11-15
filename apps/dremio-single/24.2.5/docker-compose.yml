@@ -3,9 +3,8 @@ services:
   dremio-single:
     container_name: "dremio"
     restart: always
-#    networks:
-#      - 1panel-network
-#    network_mode: host
+    networks:
+      - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:9047"
     image: dremio/dremio-oss:24.2.5
@@ -18,6 +17,6 @@ services:
     labels:
       createdBy: "Apps"
 
-#networks:
-#  1panel-network:
-#    external: true
+networks:
+  1panel-network:
+    external: true
