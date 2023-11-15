@@ -1,7 +1,7 @@
 version: '3'
 services:
   dremio-single:
-    container_name: "dremio"
+    container_name:  ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
