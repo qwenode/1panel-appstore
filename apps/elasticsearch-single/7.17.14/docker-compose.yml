@@ -3,13 +3,13 @@ services:
   elasticsearch-single:
     container_name: ${CONTAINER_NAME}
     restart: always
-#    networks:
-#      - 1panel-network
+    networks:
+      - 1panel-network
     ports:
       - "${PANEL_APP_PORT_HTTP}:9200"
     volumes:
-#      - "${MOUNT_PATH}:/usr/share/elasticsearch/data"
-#      - "${BACKUP_PATH}:/usr/share/elasticsearch/backup"
+      - "${MOUNT_PATH}:/usr/share/elasticsearch/data"
+      - "${BACKUP_PATH}:/usr/share/elasticsearch/backup"
       - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
     image: elasticsearch:7.17.14
     ulimits:
@@ -26,10 +26,10 @@ services:
       - http.cors.enabled=${ELASTIC_SECURITY}
       - http.cors.allow-origin="*"
       - http.cors.allow-headers="X-Requested-With,Content-Type,Content-Length,Authorization"
-#      - ${P_ES_JAVA_OPTS}
+      - ${P_ES_JAVA_OPTS}
     labels:
       createdBy: "Apps"
 
-#networks:
-#  1panel-network:
-#    external: true
+networks:
+  1panel-network:
+    external: true
