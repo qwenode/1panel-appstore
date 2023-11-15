@@ -111,7 +111,7 @@ dremio_internal_start() {
     [ "$DREMIO_LOG_TO_CONSOLE" != "1" ] && DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -Ddremio.log.path=${DREMIO_LOG_DIR}"
     DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -Ddremio.plugins.path=${DREMIO_PLUGINS_DIR}"
     DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -Xmx${DREMIO_MAX_HEAP_MEMORY_SIZE_MB}m"
-    DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -Duser.timezone=${TZ}"
+    DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -Duser.timezone=${TZZ}"
     DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -XX:MaxDirectMemorySize=${DREMIO_MAX_DIRECT_MEMORY_SIZE_MB}m"
     DREMIO_JAVA_OPTS="$DREMIO_JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=${DREMIO_LOG_DIR}"
     # netty options

@@ -14,6 +14,7 @@ services:
       - "${CACHE_PATH}:/var/log/dremio"
       - "./dremio:/opt/dremio/bin/dremio"
     environment:
+      - TZZ=${TZ}
       - TZ=${TZ}
     labels:
       createdBy: "Apps"
