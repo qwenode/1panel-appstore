@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chown 999:999 ./dremio
+#chown 999:999 ./dremio
 chmod 777 ./dremio
 source ./.env
 if [ -z "${MOUNT_PATH}" ] || [ -z "${CACHE_PATH}" ]; then
