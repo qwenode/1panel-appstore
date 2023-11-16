@@ -24,7 +24,7 @@ additionalProperties:
           type: text
         - default: "Asia/Shanghai"
           edit: true
-          envKey: TZ
+          envKey: TZZ
           labelEn: Timezone
           labelZh: 时区
           required: true
