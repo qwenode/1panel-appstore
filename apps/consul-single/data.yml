@@ -1,0 +1,20 @@
+name: Consul Single
+tags:
+    - 中间件
+title: Consul 单节点版
+type: 中间件
+description: 支持多数据中心的分布式服务发现和键值对存储服务
+additionalProperties:
+    key: consul-single
+    name: Consul Single
+    tags:
+        - Middleware
+    shortDescZh: Consul 单节点版
+    shortDescEn: Consul Single
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 5
+    website: https://www.consul.io
+    github: https://github.com/hashicorp/consul
+    document: https://learn.hashicorp.com/consul

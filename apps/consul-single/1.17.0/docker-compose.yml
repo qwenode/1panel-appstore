@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  consul-single:
+    image: hashicorp/consul:1.17.0
+    networks:
+      - 1panel-network
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    volumes:
+      - ./config:/consul/config
+      - ./data:/consul/data
+      - ./logs:/consul/logs
+    command:  consul agent -server -bootstrap-expect=1 -client=0.0.0.0 -ui -data-dir=/consul/data -node=consul-node -datacenter=dc1 -log-level=warn -enable-script-checks=true -config-dir=/consul/config
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8500"
+      - "${PANEL_APP_PORT_DNS}:8600/udp"
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

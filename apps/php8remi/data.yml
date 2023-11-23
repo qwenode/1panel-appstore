@@ -1,0 +1,20 @@
+name: PHP 8 Remi
+tags:
+    - 运行环境
+title: PHP8 运行环境 Remi
+type: 运行环境
+description: PHP8 运行环境 Remi
+additionalProperties:
+    key: php8remi
+    name: PHP 8 Remi
+    tags:
+        - Runtime
+    shortDescZh: PHP8 运行环境 Remi
+    shortDescEn: PHP8 Runtime Remi
+    type: php
+    crossVersionUpdate: false
+    limit: 0
+    recommend: 100
+    website: https://www.php.net/
+    github: https://github.com/php/php-src
+    document: https://www.php.net/docs.php
