@@ -14,10 +14,10 @@ additionalProperties:
       labelEn: Admin Email
       labelZh: 管理员邮箱
       random: true
-      rule: paramCommon
+      rule: paramComplexity
       required: true
       type: text
-    - default: hgaZD3#v00I5AwuzSpL
+    - default: hgaZD3v00I5AwuzSpL
       edit: true
       envKey: PGADMIN_DEFAULT_PASSWORD
       labelEn: Admin Password
