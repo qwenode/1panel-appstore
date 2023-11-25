@@ -8,13 +8,11 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: admin@1panel.
+    - default: admin@admin.admin
       edit: true
       envKey: PGADMIN_DEFAULT_EMAIL
       labelEn: Admin Email
       labelZh: 管理员邮箱
-      random: true
-      rule: paramComplexity
       required: true
       type: text
     - default: hgaZD3v00I5AwuzSpL
