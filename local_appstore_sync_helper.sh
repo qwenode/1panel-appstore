@@ -6,6 +6,7 @@ app_local_dir="/opt/1panel/resource/apps/local"
 
 # AppStore的git仓库地址（必选）
 # git_repo_url="https://github.com/xxxily/local-appstore-for-1Panel"
+#git_repo_url="https://github.com/okxlin/appstore"
 git_repo_url="https://github.com/qwenode/1panel-appstore"
 
 # 访问git仓库的access token，访问私有仓库时用，优先级高于账密（可选）
